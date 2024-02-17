@@ -68,8 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Carrello.aspx" />
-    <Content Include="DettaglioArticoloaspx.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dettaglio.aspx" />
     <Content Include="Images\smart.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -81,19 +81,19 @@
     <Compile Include="Carrello.aspx.designer.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DettaglioArticoloaspx.aspx.cs">
-      <DependentUpon>DettaglioArticoloaspx.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DettaglioArticoloaspx.aspx.designer.cs">
-      <DependentUpon>DettaglioArticoloaspx.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Dettaglio.aspx.cs">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Dettaglio.aspx.designer.cs">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Articolo.cs" />
     <Compile Include="Models\CarrelloItem.cs" />

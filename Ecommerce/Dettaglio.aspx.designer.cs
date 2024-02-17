@@ -11,7 +11,7 @@ namespace Ecommerce
 {
 
 
-    public partial class DettaglioArticoloaspx
+    public partial class Dettaglio
     {
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Ecommerce
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgArticolo;
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgArticolo;
 
         /// <summary>
         /// Controllo lblNome.
@@ -39,7 +39,7 @@ namespace Ecommerce
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNome;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblNome;
 
         /// <summary>
         /// Controllo lblDescrizione.
@@ -48,7 +48,7 @@ namespace Ecommerce
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescrizione;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblDescrizione;
 
         /// <summary>
         /// Controllo lblPrezzo.
@@ -57,6 +57,6 @@ namespace Ecommerce
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrezzo;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblPrezzo;
     }
 }

@@ -11,7 +11,7 @@ namespace Ecommerce
 {
 
 
-    public partial class Home
+    public partial class Default
     {
 
         /// <summary>

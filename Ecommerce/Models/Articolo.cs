@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Ecommerce.Models
 {
-    [Serializable]
+    
     public class Articolo
     {
         public int Id { get; set; }
