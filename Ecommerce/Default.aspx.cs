@@ -14,16 +14,16 @@ namespace Ecommerce
         public static List<Articolo> articoli = new List<Articolo>
     {
         
-        new Articolo { Id = 1, Nome = "Laptop Gaming", Prezzo = 999.99m, Descrizione = "Laptop gaming ad alte prestazioni", ImmagineUrl = "url_immagine_laptop.jpg" },
-        new Articolo { Id = 2, Nome = "Mouse Wireless", Prezzo = 49.99m, Descrizione = "Mouse wireless di precisione", ImmagineUrl = "url_immagine_mouse.jpg" },
-        new Articolo { Id = 3, Nome = "Tastiera Meccanica", Prezzo = 89.99m, Descrizione = "Tastiera meccanica retroilluminata", ImmagineUrl = "url_immagine_tastiera.jpg" },
-        new Articolo { Id = 4, Nome = "Monitor 4K", Prezzo = 399.99m, Descrizione = "Monitor 4K UHD 27 pollici", ImmagineUrl = "url_immagine_monitor.jpg" },
-        new Articolo { Id = 5, Nome = "Scheda Grafica RTX 3080", Prezzo = 699.99m, Descrizione = "Scheda grafica NVIDIA RTX 3080", ImmagineUrl = "url_immagine_schedagrafica.jpg" },
-        new Articolo { Id = 6, Nome = "Cuffie Bluetooth", Prezzo = 59.99m, Descrizione = "Cuffie Bluetooth con cancellazione del rumore", ImmagineUrl = "url_immagine_cuffie.jpg" },
-        new Articolo { Id = 7, Nome = "Webcam HD", Prezzo = 79.99m, Descrizione = "Webcam HD con microfono integrato", ImmagineUrl = "url_immagine_webcam.jpg" },
-        new Articolo { Id = 8, Nome = "Hard Disk Esterno", Prezzo = 99.99m, Descrizione = "Hard disk esterno USB 3.0 da 2TB", ImmagineUrl = "url_immagine_harddisk.jpg" },
-        new Articolo { Id = 9, Nome = "Router Wi-Fi 6", Prezzo = 129.99m, Descrizione = "Router Wi-Fi 6 con supporto mesh", ImmagineUrl = "url_immagine_router.jpg" },
-        new Articolo { Id = 10, Nome = "Sedia da Gaming", Prezzo = 199.99m, Descrizione = "Sedia da gaming ergonomica", ImmagineUrl = "url_immagine_sedia.jpg" }
+        new Articolo { Id = 1, Nome = "Laptop Gaming", Prezzo = 999.99m, Descrizione = "Laptop gaming ad alte prestazioni", ImmagineUrl = "Images/Laptop.jpg" },
+        new Articolo { Id = 2, Nome = "Mouse Wireless", Prezzo = 49.99m, Descrizione = "Mouse wireless di precisione", ImmagineUrl = "Images/mouse.jpg" },
+        new Articolo { Id = 3, Nome = "Tastiera Meccanica", Prezzo = 89.99m, Descrizione = "Tastiera meccanica retroilluminata", ImmagineUrl = "Images/tastiera.jpg" },
+        new Articolo { Id = 4, Nome = "Monitor 4K", Prezzo = 399.99m, Descrizione = "Monitor 4K UHD 27 pollici", ImmagineUrl = "Images/monitor.jpg" },
+        new Articolo { Id = 5, Nome = "Scheda Grafica RTX 3080", Prezzo = 699.99m, Descrizione = "Scheda grafica NVIDIA RTX 3080", ImmagineUrl = "Images/nvidia.jpg" },
+        new Articolo { Id = 6, Nome = "Cuffie Bluetooth", Prezzo = 59.99m, Descrizione = "Cuffie Bluetooth con cancellazione del rumore", ImmagineUrl = "Images/cuffie.jpg" },
+        new Articolo { Id = 7, Nome = "Webcam HD", Prezzo = 79.99m, Descrizione = "Webcam HD con microfono integrato", ImmagineUrl = "Images/cuffie.jpg" },
+        new Articolo { Id = 8, Nome = "Hard Disk Esterno", Prezzo = 99.99m, Descrizione = "Hard disk esterno USB 3.0 da 2TB", ImmagineUrl = "Images/hardisk.jpg" },
+        new Articolo { Id = 9, Nome = "Router Wi-Fi 6", Prezzo = 129.99m, Descrizione = "Router Wi-Fi 6 con supporto mesh", ImmagineUrl = "Images/router.jpg" },
+        new Articolo { Id = 10, Nome = "Sedia da Gaming", Prezzo = 199.99m, Descrizione = "Sedia da gaming ergonomica", ImmagineUrl = "Images/sedia.jpg" }
     };
 
         protected void Page_Load(object sender, EventArgs e)
@@ -59,6 +59,8 @@ namespace Ecommerce
             if (articoloAggiunto != null)
             {
                 carrello.Add(articoloAggiunto);
+                string script = $"toastr.success('{articoloAggiunto.Nome} aggiunto al carrello con successo!');";
+                ScriptManager.RegisterStartupScript(this, GetType(), "notificaCarrello", script, true);
             }
 
             Session["Carrello"] = carrello;

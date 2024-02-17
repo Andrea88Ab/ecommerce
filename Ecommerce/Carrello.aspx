@@ -8,6 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <h1 class="text-center" style= "font-size: 60px; font-weight: bold;">Carrello</h1>
+
+     
         <asp:GridView ID="GridViewCarrello" runat="server" CssClass="table table-hover" AutoGenerateColumns="False">
             <Columns>
                 <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome" />
@@ -20,6 +23,26 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        <div class="mt-4 text-center">
+            <asp:Button ID="ButtonSvuotaCarrello" runat="server" Text="Svuota Carrello" OnClick="ButtonSvuotaCarrello_Click" CssClass="btn btn-warning" />
+
+        
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card text-center mt-3 mb-3">
+            <div class="card-header">
+                Riepilogo Carrello
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Totale Articoli nel Carrello: <asp:Label ID="LabelTotaleArticoli" runat="server" Text="0"></asp:Label></h5>
+                <p class="card-text"><asp:Label ID="LabelTotalePrezzo" runat="server" Text="€0,00"></asp:Label></p>
+                <a href="Default.aspx" class="btn btn-primary">Continua lo Shopping</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
     </form>
 </body>
 </html>

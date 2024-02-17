@@ -31,5 +31,32 @@ namespace Ecommerce
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewCarrello;
+
+        /// <summary>
+        /// Controllo ButtonSvuotaCarrello.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSvuotaCarrello;
+
+        /// <summary>
+        /// Controllo LabelTotaleArticoli.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelTotaleArticoli;
+
+        /// <summary>
+        /// Controllo LabelTotalePrezzo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelTotalePrezzo;
     }
 }

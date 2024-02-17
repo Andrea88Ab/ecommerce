@@ -24,6 +24,22 @@ namespace Ecommerce
                 List<Articolo> carrello = (List<Articolo>)Session["Carrello"];
                 GridViewCarrello.DataSource = carrello;
                 GridViewCarrello.DataBind();
+
+                // Aggiorna il totale articoli nel carrello
+                LabelTotaleArticoli.Text = carrello.Count.ToString();
+
+                // Opzionale: Calcola e mostra il prezzo totale degli articoli nel carrello
+                decimal totalePrezzo = carrello.Sum(articolo => articolo.Prezzo);
+                LabelTotalePrezzo.Text = $"Totale: {totalePrezzo:C}";
+
+                ButtonSvuotaCarrello.Enabled = carrello.Any();
+            }
+            else
+            {
+                LabelTotaleArticoli.Text = "0";
+                // Opzionale: Aggiorna il Label del prezzo totale se presente
+                LabelTotalePrezzo.Text = "Totale: €0,00";
+                ButtonSvuotaCarrello.Enabled = false;
             }
         }
 
@@ -39,6 +55,17 @@ namespace Ecommerce
                 carrello.Remove(articoloDaRimuovere);
                 Session["Carrello"] = carrello;
                 CaricaCarrello(); // Aggiorna la visualizzazione del carrello
+            }
+        }
+
+        protected void ButtonSvuotaCarrello_Click(object sender, EventArgs e)
+        {
+            if (Session["Carrello"] != null)
+            {
+                List<Articolo> carrello = (List<Articolo>)Session["Carrello"];
+                carrello.Clear(); // Rimuove tutti gli articoli
+                Session["Carrello"] = carrello;
+                CaricaCarrello(); // Aggiorna la visualizzazione
             }
         }
     }

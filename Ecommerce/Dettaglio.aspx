@@ -11,7 +11,7 @@
         <div class="container mt-3">
             <h2>Dettagli Articolo</h2>
             <div class="card" style="width: 18rem;">
-                <img id="imgArticolo" runat="server" class="card-img-top" alt="Immagine Articolo">
+                <img id="imgArticolo" runat="server" class="card-img-top" alt="Immagine Articolo"/>
                 <div class="card-body">
                     <h5 class="card-title" id="lblNome" runat="server"></h5>
                     <p class="card-text" id="lblDescrizione" runat="server"></p>

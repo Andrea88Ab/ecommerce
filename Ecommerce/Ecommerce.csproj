@@ -70,7 +70,16 @@
     <Content Include="Carrello.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Dettaglio.aspx" />
-    <Content Include="Images\smart.jpg" />
+    <Content Include="Images\cuffie.jpg" />
+    <Content Include="Images\hardisk.jpg" />
+    <Content Include="Images\Laptop.jpg" />
+    <Content Include="Images\monitor.jpg" />
+    <Content Include="Images\mouse.jpg" />
+    <Content Include="Images\nvidia.jpg" />
+    <Content Include="Images\router.jpg" />
+    <Content Include="Images\sedia.jpg" />
+    <Content Include="Images\tastiera.jpg" />
+    <Content Include="Images\webcam.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

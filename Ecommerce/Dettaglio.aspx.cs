@@ -10,7 +10,7 @@ namespace Ecommerce
         {
             if (!IsPostBack)
             {
-                // Assicurati che l'ID sia stato fornito
+                
                 if (Request.QueryString["id"] != null)
                 {
                     int articoloId = Convert.ToInt32(Request.QueryString["id"]);
@@ -18,7 +18,7 @@ namespace Ecommerce
                 }
                 else
                 {
-                    // Gestisci il caso in cui l'ID non è fornito
+                    
                     Response.Redirect("Default.aspx");
                 }
             }
@@ -26,7 +26,7 @@ namespace Ecommerce
 
         private void MostraDettagliArticolo(int id)
         {
-            // Utilizza la lista di articoli dalla tua classe Default o una fonte di dati
+            
             Articolo articolo = Default.articoli.FirstOrDefault(a => a.Id == id);
 
             if (articolo != null)
