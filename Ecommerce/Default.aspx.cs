@@ -59,8 +59,9 @@ namespace Ecommerce
             if (articoloAggiunto != null)
             {
                 carrello.Add(articoloAggiunto);
-                string script = $"toastr.success('{articoloAggiunto.Nome} aggiunto al carrello con successo!');";
-                ScriptManager.RegisterStartupScript(this, GetType(), "notificaCarrello", script, true);
+                lblNotifica.Text = $"{articoloAggiunto.Nome} aggiunto al carrello con successo!";
+                lblNotifica.Visible = true;
+
             }
 
             Session["Carrello"] = carrello;

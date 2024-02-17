@@ -8,8 +8,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container mt-3">
-            <h2>Dettagli Articolo</h2>
+       <div class="container mt-3">
+    <h2 class="text-center">Dettagli Articolo</h2>
+    <div class="row justify-content-center">
+        <div class="col-auto">
             <div class="card" style="width: 18rem;">
                 <img id="imgArticolo" runat="server" class="card-img-top" alt="Immagine Articolo"/>
                 <div class="card-body">
@@ -20,6 +22,9 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
     </form>
 </body>
 </html>

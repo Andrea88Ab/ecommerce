@@ -13,10 +13,13 @@
     
     <form id="form1" runat="server">
         <div class="container mt-5">
+    <asp:Label ID="lblNotifica" runat="server" CssClass="alert alert-success" Visible="false"></asp:Label>
+    <div class="row mb-4">
+        <div class="container mt-5">
             <h1 class="text-center" style="color: red; font-size: 60px; font-weight: bold;">Game Pro</h1>
 
 
-            <!-- Il resto del tuo contenuto va qui -->
+            
         </div>
        
  
